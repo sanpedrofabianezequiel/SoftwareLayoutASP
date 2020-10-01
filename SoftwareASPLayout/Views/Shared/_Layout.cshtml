@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <link href="~/Content/principal.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="header">
+        <h1>Mi sitio web MVC</h1>
+    </div>
+
+    <div id="sidebar">
+
+        @if (IsSectionDefined("SideBar"))//Si la seccion esta definida
+        {
+
+            <!--Permite usar o editar esta seccion de la MASTERPAGE-->
+            @RenderSection("SideBar", false);
+
+        }
+        else
+        {
+            <!---SINO imprime lo que es estatido de la Master-->
+
+            <p>Zona sidebar Fija</p>
+        }
+
+
+    </div>
+    <div id="content">
+        @RenderBody() <!---Zona editable-->
+    </div>
+    <div id="footer">
+
+        <p>Zona Footer fijo</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿body {
+}
+#header{
+    background-color:indianred;
+    color:white;
+    padding:1px;
+}
+#siderbar{
+    float:right;
+    margin:10px;
+    padding:10px;
+    border:dotted,5px red;
+    width:190px;
+}
+#content{
+    float:left;
+    margin:10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+}
+#footer{
+
+    text-align:center;
+    font-size:8px;
+    color:gray;
+    clear:none;
+}
+.textbox{
+
+}
